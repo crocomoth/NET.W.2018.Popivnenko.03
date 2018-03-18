@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Popivnenko.03", "NET.W.2018.Popivnenko.03\NET.W.2018.Popivnenko.03.csproj", "{4A930952-4CF4-419A-996A-2E547DA63B6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Popivnenko.03.EvklidProj", "NET.W.2018.Popivnenko.03.EvklidProj\NET.W.2018.Popivnenko.03.EvklidProj.csproj", "{17C8F47D-36EA-47DB-B353-DBA9EB60F57D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuklidTestProj", "EuklidTestProj\EuklidTestProj.csproj", "{3ECBAD36-01AB-48EB-B096-62D803874F47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4A930952-4CF4-419A-996A-2E547DA63B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A930952-4CF4-419A-996A-2E547DA63B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A930952-4CF4-419A-996A-2E547DA63B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C8F47D-36EA-47DB-B353-DBA9EB60F57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C8F47D-36EA-47DB-B353-DBA9EB60F57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C8F47D-36EA-47DB-B353-DBA9EB60F57D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C8F47D-36EA-47DB-B353-DBA9EB60F57D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECBAD36-01AB-48EB-B096-62D803874F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECBAD36-01AB-48EB-B096-62D803874F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECBAD36-01AB-48EB-B096-62D803874F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECBAD36-01AB-48EB-B096-62D803874F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
