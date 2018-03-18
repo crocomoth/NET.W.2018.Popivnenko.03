@@ -37,5 +37,14 @@
   <ItemGroup>
     <Compile Include="MainClass.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NET.W.2018.Popivnenko.03.EvklidProj\NET.W.2018.Popivnenko.03.EvklidProj.csproj">
+      <Project>{17c8f47d-36ea-47db-b353-dba9eb60f57d}</Project>
+      <Name>NET.W.2018.Popivnenko.03.EvklidProj</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

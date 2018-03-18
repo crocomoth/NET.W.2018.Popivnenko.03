@@ -29,5 +29,38 @@ namespace EuklidTestProj
             int result = evklid.ClassicEvklidMethod(661, 113);
             Assert.AreEqual(1, result);
         }
+
+        [TestMethod]
+        public void TestBinary1()
+        {
+            int result = evklid.BinaryEvklidMethod(64, 48);
+            Assert.AreEqual(16, result);
+        }
+
+        [TestMethod]
+        public void TestBinary2()
+        {
+            int result = evklid.BinaryEvklidMethod(432, 111);
+            Assert.AreEqual(3, result);
+        }
+
+        [TestMethod]
+        public void TestBinary3()
+        {
+            int result = evklid.BinaryEvklidMethod(661, 113);
+            Assert.AreEqual(1, result);
+        }
+
+        [TestMethod]
+        public void TestTimer1()
+        {
+            long result = 0;
+            evklid.ClassicEvklidMethod(64, 48);
+            result = evklid.GetTimeOfExecution();
+            long binaryResult = 0;
+            evklid.BinaryEvklidMethod(64, 48);
+            binaryResult = evklid.GetTimeOfExecution();
+            Assert.IsTrue(binaryResult <= result);
+        }
     }
 }
