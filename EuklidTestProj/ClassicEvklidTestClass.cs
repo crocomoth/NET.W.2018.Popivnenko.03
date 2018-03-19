@@ -31,6 +31,13 @@ namespace EuklidTestProj
         }
 
         [TestMethod]
+        public void TestClassic4()
+        {
+            int result = evklid.ClassicEvklidMethod(32, 48,16);
+            Assert.AreEqual(16, result);
+        }
+
+        [TestMethod]
         public void TestBinary1()
         {
             int result = evklid.BinaryEvklidMethod(64, 48);
@@ -59,6 +66,30 @@ namespace EuklidTestProj
             result = evklid.GetTimeOfExecution();
             long binaryResult = 0;
             evklid.BinaryEvklidMethod(64, 48);
+            binaryResult = evklid.GetTimeOfExecution();
+            Assert.IsTrue(binaryResult <= result);
+        }
+
+        [TestMethod]
+        public void TestTimer2()
+        {
+            long result = 0;
+            evklid.ClassicEvklidMethod(64, 48,32);
+            result = evklid.GetTimeOfExecution();
+            long binaryResult = 0;
+            evklid.BinaryEvklidMethod(64, 48,32);
+            binaryResult = evklid.GetTimeOfExecution();
+            Assert.IsTrue(binaryResult <= result);
+        }
+
+        [TestMethod]
+        public void TestTimer3()
+        {
+            long result = 0;
+            evklid.ClassicEvklidMethod(432, 111);
+            result = evklid.GetTimeOfExecution();
+            long binaryResult = 0;
+            evklid.BinaryEvklidMethod(432, 111);
             binaryResult = evklid.GetTimeOfExecution();
             Assert.IsTrue(binaryResult <= result);
         }
