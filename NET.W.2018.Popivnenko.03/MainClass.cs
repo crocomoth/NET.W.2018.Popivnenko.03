@@ -18,6 +18,11 @@ namespace NET.W._2018.Popivnenko._03
             evklid.BinaryEvklidMethod(64, 48);
             time2 = evklid.GetTimeOfExecution();
             time1 = 0;
+
+            DoubleConverterProj.DoubleConverter doubleConverter = new DoubleConverterProj.DoubleConverter();
+            double value = -255.255;
+            string res = doubleConverter.Convert(value);
+            res += " ";
         }
     }
 }

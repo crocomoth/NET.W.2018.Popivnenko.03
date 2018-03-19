@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Popivnenko.03.Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuklidTestProj", "EuklidTestProj\EuklidTestProj.csproj", "{3ECBAD36-01AB-48EB-B096-62D803874F47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Popivnenko.03.DoubleConverterProj", "NET.W.2018.Popivnenko.03.DoubleConverterProj\NET.W.2018.Popivnenko.03.DoubleConverterProj.csproj", "{2DF5273F-4D01-4FF3-B888-B85ED50460A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3ECBAD36-01AB-48EB-B096-62D803874F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ECBAD36-01AB-48EB-B096-62D803874F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ECBAD36-01AB-48EB-B096-62D803874F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF5273F-4D01-4FF3-B888-B85ED50460A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF5273F-4D01-4FF3-B888-B85ED50460A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF5273F-4D01-4FF3-B888-B85ED50460A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF5273F-4D01-4FF3-B888-B85ED50460A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

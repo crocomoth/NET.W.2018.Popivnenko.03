@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A930952-4CF4-419A-996A-2E547DA63B6D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>NET.W._2018.Popivnenko._03</RootNamespace>
-    <AssemblyName>NET.W.2018.Popivnenko.03</AssemblyName>
+    <ProjectGuid>{2DF5273F-4D01-4FF3-B888-B85ED50460A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NET.W._2018.Popivnenko._03.DoubleConverterProj</RootNamespace>
+    <AssemblyName>NET.W.2018.Popivnenko.03.DoubleConverterProj</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,23 +30,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainClass.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NET.W.2018.Popivnenko.03.DoubleConverterProj\NET.W.2018.Popivnenko.03.DoubleConverterProj.csproj">
-      <Project>{2df5273f-4d01-4ff3-b888-b85ed50460a2}</Project>
-      <Name>NET.W.2018.Popivnenko.03.DoubleConverterProj</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NET.W.2018.Popivnenko.03.EvklidProj\NET.W.2018.Popivnenko.03.EvklidProj.csproj">
-      <Project>{17c8f47d-36ea-47db-b353-dba9eb60f57d}</Project>
-      <Name>NET.W.2018.Popivnenko.03.EvklidProj</Name>
-    </ProjectReference>
+    <Compile Include="DoubleConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
