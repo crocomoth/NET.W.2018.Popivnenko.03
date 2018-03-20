@@ -13,9 +13,9 @@ namespace NET.W._2018.Popivnenko._03
             EvklidProj.ClassicEvklid evklid = new EvklidProj.ClassicEvklid();
             long time1 = 0;
             long time2 = 0;
-            evklid.ClassicEvklidMethod(64, 48);
+            evklid.ClassicEuclidMethod(64, 48,32);
             time1 = evklid.GetTimeOfExecution();
-            evklid.BinaryEvklidMethod(64, 48);
+            evklid.BinaryEuclidMethod(64, 48,32);
             time2 = evklid.GetTimeOfExecution();
             time1 = 0;
 

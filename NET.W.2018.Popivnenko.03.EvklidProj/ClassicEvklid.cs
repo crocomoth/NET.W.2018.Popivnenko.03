@@ -1,25 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace NET.W._2018.Popivnenko._03.EvklidProj
 {
+    /// <summary>
+    /// Class that allow to get GCD of several (two,three etc.) numbers
+    /// in two ways.
+    /// </summary>
     public class ClassicEvklid
     {
         private Stopwatch stopwatch = new Stopwatch();
 
         private long ticks;
 
-
+        /// <summary>
+        /// Method called to get elapsed time during last calculation.
+        /// </summary>
+        /// <returns>Last calculation time in ticks.</returns>
         public long GetTimeOfExecution()
         {
             return ticks;
         }
 
-        public int ClassicEvklidMethod(params int[] numbers)
+        /// <summary>
+        /// Method that calculates GCD of several numbers.
+        /// Uses dividing and modulo in calcuclations.
+        /// </summary>
+        /// <param name="numbers">Parameters(integers) transfered into method.</param>
+        /// <returns>GCD of all parameters or -1 in case of errors.</returns>
+        public int ClassicEuclidMethod(params int[] numbers)
         {
             stopwatch.Reset();
             stopwatch.Start();
@@ -39,8 +47,13 @@ namespace NET.W._2018.Popivnenko._03.EvklidProj
             return result;
         }
 
-
-        public int BinaryEvklidMethod(params int[] numbers)
+        /// <summary>
+        ///  Method that calculates GCD of several numbers.
+        ///  Uses shifts and substracting in calculations.
+        /// </summary>
+        /// <param name="numbers">Parameters(integers) transfered into method.</param>
+        /// <returns>GCD of all parameters or -1 in case of errors.</returns>
+        public int BinaryEuclidMethod(params int[] numbers)
         {
             stopwatch.Reset();
             stopwatch.Start();
