@@ -1,4 +1,4 @@
-# NET.W.2018.Popivnenko.02
+# NET.W.2018.Popivnenko.03
 
 ## tasks
 1) Create a project with a class which allows calculation of GCD using Euclid algorytm for two,three, etc. arguments
